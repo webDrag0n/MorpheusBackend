@@ -44,7 +44,7 @@ class H1ControlPublisher(Node):
         # h1_control_command.right_shoulder_yaw = random.random() * 90
         # h1_control_command.right_elbow = random.random() * 90
         
-        self.get_logger().info(f'Publishing: {h1_control_command}')
+        # self.get_logger().info(f'Publishing: {h1_control_command}')
         self.publisher_.publish(h1_control_command)
         
     def timer_callback(self):
