@@ -23,6 +23,7 @@ setup(
     entry_points={
         'console_scripts': [
             'h1_control_publisher = unity_robotics_demo.h1_control_publisher:main',
+            'h1_status_receiver = unity_robotics_demo.h1_status_receiver:main',
             'color_publisher = unity_robotics_demo.color_publisher:main',
             'position_service = unity_robotics_demo.position_service:main',
         ],
