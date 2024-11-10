@@ -112,9 +112,11 @@ This is the ROS2 connector used to bridge controller code and unity. Need to be 
 	- 运行前需要重新编译工作区，以防有更改在增加模块阶段忘记编译
 	  ```bash
 	  cd <workspace>
-	  ./start_compile.sh
-	  ./start_ros_tcp_endpoint.sh 
-	  ./start_h1_publisher.sh
+	  bash start_all.sh
+   	  # check robot position and rotation
+   	  bash see_h1_status.sh
+   	  # stop all
+   	  bash stop_all.sh
 	  ```
 
 ## Tips
