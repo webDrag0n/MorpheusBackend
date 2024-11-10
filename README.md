@@ -13,7 +13,7 @@ This is the ROS2 connector used to bridge controller code and unity. Need to be 
 	-
 	  ```bash
 	  docker load -i morpheus_backend.tar
-	  docker run --name morpheus_backend --gpus all -it --shm-size=16g --rm -v /mnt/j/DockerDirs/morpheus/:/root -p 10000:10000 morpheus_backend:v1.0
+	  docker run --name morpheus_backend --gpus all -it --shm-size=16g --rm -v /mnt/j/DockerDirs/morpheus/:/root -p 10000:10000 morpheus_backend:v1.2
 	  [press ctrl-p-q to detach from container]
 	  docker ps -a # get docker container id
 	  docker exec -it [container_id] /bin/bash
@@ -28,7 +28,7 @@ This is the ROS2 connector used to bridge controller code and unity. Need to be 
 	  git clone https://github.com/webDrag0n/MorpheusBackend.git
 	  cd MorpheusBackend
 	  # pull submodules such as ROS-TCP-Endpoint
-    git submodule update --init --recursive
+   	  git submodule update --init --recursive
 	  
 	  # Build
 	  colcon build
