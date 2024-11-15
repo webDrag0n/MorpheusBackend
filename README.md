@@ -6,6 +6,8 @@ This is the ROS2 connector used to bridge controller code and unity. Need to be 
 
 ## Deploy
 
+建议使用Windows Unity与WSL2 Docker进行开发
+
 - ## Docker
 	- 下载`morpheus_backend.tar`
 	- TODO 补充docker链接
@@ -13,6 +15,7 @@ This is the ROS2 connector used to bridge controller code and unity. Need to be 
 	-
 	  ```bash
 	  docker load -i morpheus_backend.tar
+   	  # 强烈建议通过`-v`映射外部目录为docker用户目录，可以避免docker关闭后数据丢失
 	  docker run --name morpheus_backend --gpus all -it --shm-size=16g --rm -v /mnt/j/DockerDirs/morpheus/:/root -p 10000:10000 morpheus_backend:v1.2
 	  [press ctrl-p-q to detach from container]
 	  docker ps -a # get docker container id
